@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(90deg, red, blue);
+}
+
+#content {
+    background: white;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+#ball_div {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#inball_div {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
