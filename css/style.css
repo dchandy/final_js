@@ -7,24 +7,27 @@ body {
     width: 400px;
     margin: auto;
     text-align: center;
+    border-radius: 10px;
+    padding: 10px 10px;
 }
 
 #ball_div {
     width: 350px;
     height: 350px;
-    margin: auto;
+    margin: 20px auto;
     background-color: black;
     border-radius: 50%;
     color: white;
     display: grid;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 #inball_div {
     width: 150px;
     height: 150px;
-    margin: auto;
+    /* margin: auto; */
+    position: relative;
     background-color: white;
     border-radius: 50%;
     color: black;

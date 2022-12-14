@@ -1,6 +1,8 @@
 const question = document.querySelector("#question");
 const button = document.querySelector("#button_8");
 const answer = document.querySelector("#answer");
+const ball_div = document.querySelector("#ball_div");
+const inball_div = document.querySelector("#inball_div");
 
 
 function rand_gen (max_number){
@@ -35,6 +37,18 @@ button.addEventListener("click", () => {
         answer.innerText = "8";
         answer.style.fontSize = "100px";
     };
+});
+
+ball_div.addEventListener("mouseenter", () => {
+    ball_div.style.backgroundColor = "green";
+    ball_div.addEventListener("mousemove",function(e){
+        console.log(`Movement X: ${e.screenX}, Y: ${e.screenY}`);
+        inball_div.style.top = `${e.screenY}`;
+    });
+});
+
+ball_div.addEventListener("mouseleave", () => {
+    ball_div.style.backgroundColor = "black";
 });
 
 question.addEventListener("input", () => {
