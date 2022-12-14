@@ -19,14 +19,14 @@ body {
     border-radius: 50%;
     color: white;
     display: grid;
-    /* justify-content: center; */
-    /* align-items: center; */
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 
 #inball_div {
     width: 150px;
     height: 150px;
-    /* margin: auto; */
     position: relative;
     background-color: white;
     border-radius: 50%;
